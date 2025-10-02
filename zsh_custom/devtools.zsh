@@ -13,6 +13,8 @@ if command -v tldr &> /dev/null; then
 fi
 if command -v zoxide &> /dev/null; then
 	eval "$(zoxide init zsh)"
+else
+    alias z=cd
 fi
 
 pub() {
